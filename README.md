@@ -1,7 +1,7 @@
 Align To
 =================
 
-Plugin that align object relative to more options for Bohemian Coding's Sketch 3. 
+Plugin that align object relative to more options for Bohemian Coding's Sketch 3.
 It provides that align relative to key object in Sketch 3.
 
 
@@ -9,6 +9,8 @@ Because original align function in Sketch only provide that align to a selection
 
 
 #DEMO
+
+![demo]()
 
 #Feature
 
@@ -21,13 +23,13 @@ Because original align function in Sketch only provide that align to a selection
 
 #Installation
 
-1. [Download the latest release]() and Open it
+1. [Download the latest release](https://github.com/lucienlee/AlignTo/releases/latest) and Open it
 2. Navigate the Sketch menu bar to `Plugins ▸ Reveal Plugins Folder`
 3. Place `AlignTo` directory into the revealed plugins directory
 
 #How to use
 
-Select `Plugins ▸ AlignTo` in the Sketch menu bar, then select any align method you want.
+Select all layers you want to align, then select `Plugins ▸ AlignTo` in the Sketch menu bar. Next, select align method and which layer as key layer.
 
 ###Keyboard Shortcut
 
