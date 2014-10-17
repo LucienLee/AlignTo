@@ -1,3 +1,9 @@
+/*
+* Align To plugin for Sketch.app
+* Author: Lucien Lee
+* Version: 1.0
+*/
+
 
 function align(direction){
 	if([selection count] < 2){
