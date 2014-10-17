@@ -24,7 +24,12 @@ Because original align function in Sketch only provide that align to a selection
 
 #Installation
 
-1. [Download the latest release](https://github.com/lucienlee/AlignTo/releases/latest) and Open it
+###Intall by Sketch Toolbox (recommended)
+Use [Sketch Toobox](http://sketchtoolbox.com/) to search `AlignTo` and click install.
+
+###Install manually 
+
+1. [Download the latest release](https://github.com/lucienlee/AlignTo/releases/latest) and open it
 2. Navigate the Sketch menu bar to `Plugins ▸ Reveal Plugins Folder`
 3. Place `AlignTo` directory into the revealed plugins directory
 
