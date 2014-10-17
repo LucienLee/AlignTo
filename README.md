@@ -10,7 +10,8 @@ Because original align function in Sketch only provide that align to a selection
 
 #DEMO
 
-![demo]()
+
+[![demo](./img/demo.png)](https://vimeo.com/109242015)
 
 #Feature
 
