@@ -8,7 +8,7 @@ It provides that align relative to key object in Sketch 3.
 Because original align function in Sketch only provide that align to a selection and an Artboard, this plugin port illustrator's function of align to key objects.
 
 
-#DEMO
+#DEMO Video
 
 
 [![demo](./img/demo.png)](https://vimeo.com/109242015)
