@@ -45,6 +45,7 @@ Select all layers you want to align, then select `Plugins ▸ AlignTo` in the Sk
 - Align bottom relative to key object: `CMD` + `Option` + `Ctrl` + `b`
 - Align horzonial center relative to key object: `CMD` + `Option` + `Ctrl` + `h`
 - Align vertical center relative to key object: `CMD` + `Option` + `Ctrl` + `v`
+- Align vertical and horzonial center relative to key object: `CMD` + `Option` + `Ctrl` + `a`
 
 ###Change Shortcut
 Open `AlignTo` directory, then open any `*.sketchplugin` file with text editor. Change shortcut you want in the first line.

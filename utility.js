@@ -64,6 +64,16 @@ function align(direction){
 					[frame setMidX:keyCoordinate]
 				}
 				break;
+			case "center":
+				var getKeyPosition = function(keyFrame) {
+					keyCoordinateX = [keyFrame midX]
+					keyCoordinateY = [keyFrame midY]
+				}
+				var alignObj = function(frame){
+					[frame setMidX:keyCoordinateX]
+					[frame setMidY:keyCoordinateY]
+				}
+				break;
 		}
 
 		var choice = createSelect('Align ' + direction +' relative to', layers, 0)
