@@ -1,0 +1,73 @@
+{
+  "name": "Align To",
+  "description": "Plugin that align layer relative to more options for Bohemian Coding's Sketch 3",
+  "author": "Lucien Lee",
+  "email": "lucien@lucienlee.cc",
+  "homepage": "https://github.com/LucienLee/AlignTo",
+  "version": 1.9,
+  "identifier": "cc.lucienlee.sketch.align.to",
+  "compatibleVersion": "3.3.2",
+  "bundleVersion": 1,
+  "commands": [
+  	{
+      "name": "Align top to key object",
+      "identifier": "top",
+      "shortcut": "cmd option control t",
+      "script": "align.cocoascript",
+      "handler": "alignTop"
+    },
+    {
+      "name": "Align bottom to key object",
+      "identifier": "bottom",
+      "shortcut": "cmd option control b",
+      "script": "align.cocoascript",
+      "handler": "alignBottom"
+    },
+    {
+      "name": "Align left to key object",
+      "identifier": "left",
+      "shortcut": "cmd option control l",
+      "script": "align.cocoascript",
+      "handler": "alignLeft"
+    },
+    {
+      "name": "Align right to key object",
+      "identifier": "right",
+      "shortcut": "cmd option control r",
+      "script": "align.cocoascript",
+      "handler": "alignRight"
+    },
+    {
+      "name": "Align vertical center to key object",
+      "identifier": "verticalCenter",
+      "shortcut": "cmd option control v",
+      "script": "align.cocoascript",
+      "handler": "alignVerticalCenter"
+    },
+    {
+      "name": "Align horizontal center to key object",
+      "identifier": "horizontalCenter",
+      "shortcut": "cmd option control h",
+      "script": "align.cocoascript",
+      "handler": "alignHorizontalCenter"
+    },
+    {
+      "name": "Align vertical and horizontal center to key object",
+      "identifier": "center",
+      "shortcut": "cmd option control c",
+      "script": "align.cocoascript",
+      "handler": "alignCenter"
+    }
+  ],
+  "menu": {
+    "items": [
+      "top",
+      "verticalCenter",
+      "bottom",
+      "left",
+      "horizontalCenter",
+      "right",
+      "center"
+    ]
+  }
+}

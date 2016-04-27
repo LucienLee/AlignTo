@@ -4,13 +4,43 @@
 * Version: 1.0
 */
 
+function alignBottom(context){
+	align("bottom", context)
+}
 
-function align(direction){
-	if([selection count] < 2){
+function alignTop(context){
+	align("top", context)
+}
+
+function alignLeft(context){
+	align("left", context)
+}
+
+function alignRight(context){
+	align("right", context)
+}
+
+function alignCenter(context){
+	align("center", context)
+}
+
+function alignHorizontalCenter(context){
+	align("horizontal center", context)
+}
+
+function alignVerticalCenter(context){
+	align("vertical center", context)
+}
+
+
+
+function align(direction, context){
+	var selection = context.selection
+	if(selection.count() < 2){
 	  [doc showMessage:"Please select 2 or more layers."]
 	}else {
 		var layers = []
-		for (var i=0; i < [selection count]; i++){
+		for (var i=0; i < selection.count(); i++){
 			layerName = selection[i].name()
 			layers.push(layerName)
 		}
@@ -99,13 +129,13 @@ function createSelect(msg, items, selectedItemIndex){
 	[accessory selectItemAtIndex:selectedItemIndex]
 
 	var alert = [[NSAlert alloc] init]
-  [alert setMessageText:msg]
-  [alert addButtonWithTitle:'OK']
-  [alert addButtonWithTitle:'Cancel']
-  [alert setAccessoryView:accessory]
+	[alert setMessageText:msg]
+	[alert addButtonWithTitle:'OK']
+	[alert addButtonWithTitle:'Cancel']
+	[alert setAccessoryView:accessory]
 
-  var responseCode = [alert runModal]
-  var sel = [accessory indexOfSelectedItem]
+	var responseCode = [alert runModal]
+	var sel = [accessory indexOfSelectedItem]
 
-  return [responseCode, sel]
+	return [responseCode, sel]
 }

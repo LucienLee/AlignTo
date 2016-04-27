@@ -1,4 +1,0 @@
-// (cmd option control h)
-#import 'utility.js'
-
-align("horizontal center")
