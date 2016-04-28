@@ -63,6 +63,11 @@ Open `AlignTo` directory, then open `manifest.json` file with text editor. Chang
 
 ![change shortcut](./img/shortcut.png)
 
+#Credits
+Thanks [@romannurik](https://github.com/romannurik) and [@abynim](https://github.com/abynim) 's plugins to make this plugin possible.
+
+- [SketchPlugin Remember](https://github.com/abynim/SketchPlugin-Remember)
+- [Sketch Nib UI Template Plugin](https://github.com/romannurik/Sketch-NibUITemplatePlugin)
 
 #Feedback
 
