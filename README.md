@@ -21,6 +21,8 @@ Because original align function in Sketch only provide that align to a selection
 - Align bottom relative to key object
 - Align horzonial center relative to key object
 - Align vertical center relative to key object
+- Align horzonial and vertical center relative to key object
+- Align layers automactically with bottom or top layer of a group layers
 
 #Installation
 
@@ -36,6 +38,15 @@ Use [Sketch Toobox](http://sketchtoolbox.com/) to search `AlignTo` and click ins
 #How to use
 
 Select all layers you want to align, then select `Plugins ▸ AlignTo` in the Sketch menu bar. Next, select align method and which layer as key layer.
+
+### Setting
+You can choose how "Align To" select the key object in Setting.  
+Align To provide three modes to select the key object, which are **selecting manually**, **selecting the bottom layer automatically** and **selecting the top layer automatically**. The default setting is using modal to select key object manually. 
+
+To change the setting, select `Plugins ▸ AlignTo ▸ Setting` in the Sketch menu bar. 
+
+![setting](./img/setting.png)
+
 
 ###Keyboard Shortcut
 
@@ -55,4 +66,4 @@ Open `AlignTo` directory, then open `manifest.json` file with text editor. Chang
 
 #Feedback
 
-If you discover any issues or have questions regarding usage, please send a message to [lkiral7903@gmail.com](mailto:lucien@lucienlee.cc)
+If you discover any issues or have questions regarding usage, please send a message to [lucien@lucienlee.cc](mailto:lucien@lucienlee.cc)
