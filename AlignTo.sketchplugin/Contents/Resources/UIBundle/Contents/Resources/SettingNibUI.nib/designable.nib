@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DummyNibOwner">
+            <connections>
+                <outlet property="bottom" destination="Mnj-Bm-4cu" id="xrP-eU-4m1"/>
+                <outlet property="modal" destination="vbb-XX-GdS" id="04D-j3-Lfd"/>
+                <outlet property="top" destination="3bR-p0-fJ6" id="KK0-Tv-8Lp"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="68E-eC-hxe">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box fixedFrame="YES" title="Selecting Key Object" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="xDX-8R-KL4">
+                    <rect key="frame" x="0.0" y="0.0" width="317" height="112"/>
+                    <view key="contentView" id="Tx5-l5-1Jk">
+                        <rect key="frame" x="1" y="1" width="315" height="96"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mnj-Bm-4cu">
+                                <rect key="frame" x="11" y="41" width="296" height="18"/>
+                                <buttonCell key="cell" type="radio" title="Use bottom layer as key object automatically." bezelStyle="regularSquare" imagePosition="left" alignment="left" refusesFirstResponder="YES" inset="2" id="4bn-NL-z6h">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbb-XX-GdS">
+                                <rect key="frame" x="11" y="66" width="269" height="18"/>
+                                <buttonCell key="cell" type="radio" title="Use modal to select key object manually." bezelStyle="regularSquare" imagePosition="left" alignment="left" refusesFirstResponder="YES" inset="2" id="d14-Ex-EvB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bR-p0-fJ6">
+                                <rect key="frame" x="11" y="16" width="273" height="18"/>
+                                <buttonCell key="cell" type="radio" title="Use top layer as key object automatically." bezelStyle="regularSquare" imagePosition="left" alignment="left" refusesFirstResponder="YES" inset="2" id="IEc-F3-h3b">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+            </subviews>
+            <point key="canvasLocation" x="477.5" y="238"/>
+        </customView>
+    </objects>
+</document>

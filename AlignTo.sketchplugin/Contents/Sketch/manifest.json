@@ -4,7 +4,7 @@
   "author": "Lucien Lee",
   "email": "lucien@lucienlee.cc",
   "homepage": "https://github.com/LucienLee/AlignTo",
-  "version": 1.9,
+  "version": 2.0,
   "identifier": "cc.lucienlee.sketch.align.to",
   "compatibleVersion": "3.3.2",
   "bundleVersion": 1,
@@ -54,9 +54,15 @@
     {
       "name": "Align vertical and horizontal center to key object",
       "identifier": "center",
-      "shortcut": "cmd option control c",
+      "shortcut": "cmd option control a",
       "script": "align.cocoascript",
       "handler": "alignCenter"
+    },
+    {
+      "name": "Setting",
+      "identifier": "setting",
+      "script": "setting.cocoascript",
+      "handler": "main",
     }
   ],
   "menu": {
@@ -67,7 +73,8 @@
       "left",
       "horizontalCenter",
       "right",
-      "center"
+      "center",
+      "setting"
     ]
   }
 }

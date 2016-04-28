@@ -1,0 +1,64 @@
+@import 'pluginDefaults.js'
+@import 'sketch-nibui.js'
+
+var presets = { mode: 'modal' }
+var pluginDomain = "cc.lucienlee.sketch.align.to"
+var userDefaults = initDefaults(pluginDomain, presets)
+
+function main(context){
+	var choise = openModal(context)
+	// confirm
+	if( choise[0] == 1000 ){
+		setSetting( choise[1] )
+	}
+}
+
+function setSetting(data){
+	userDefaults.mode = data
+	saveDefaults(userDefaults)
+}
+
+function loadSetting(){
+	return userDefaults.mode
+}
+
+function openModal(context){
+	var msg = "Align To Plugin Setting",
+		options = ['modal', 'bottom', 'top'];
+
+	var alert = [[NSAlert alloc] init]
+	[alert setMessageText:msg]
+	[alert addButtonWithTitle:'Save']
+	[alert addButtonWithTitle:'Cancel']
+	alert.setIcon(NSImage.alloc().initWithContentsOfFile(
+      context.plugin.urlForResourceNamed('setting_icon.png').path()));
+
+	var nibui = new NibUI(context, 'UIBundle', 'SettingNibUI', options)
+	alert.setAccessoryView(nibui.view)
+
+	// load setting and turn on radio button
+	var setting = loadSetting()
+	nibui[setting].state = NSOnState
+
+  	for( var i = 0; i < options.length; i++ ){
+  		// Bind Radio Click Event
+		(function(index) {
+			var target = options[index]
+			nibui.attachTargetAndAction(nibui[target], function() {
+				setting = target
+				// turn off the rest radio
+				for( var j = 0; j < options.length; j++ ){
+					if( j != index ){
+						var otherIndex = options[j]
+						nibui[otherIndex].state = NSOffState
+					}
+				}
+			});
+		})(i)
+ 	}
+
+	var responseCode = [alert runModal]
+	nibui.destroy()
+
+	return [responseCode, setting]
+}
