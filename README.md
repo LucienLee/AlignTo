@@ -32,7 +32,7 @@ Because original align function in Sketch only provide that align to a selection
 
 ### Intall by Sketch Toolbox
 
-Use [Sketch Toobox](http://sketchtoolbox.com/) to search `AlignTo` and click install.
+Use [Sketch Toolbox](http://sketchtoolbox.com/) to search `AlignTo` and click install.
 
 ### Install manually
 
