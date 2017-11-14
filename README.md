@@ -19,10 +19,10 @@ Because original align function in Sketch only provide that align to a selection
 - Align right relative to key object
 - Align top relative to key object
 - Align bottom relative to key object
-- Align horzonial center relative to key object
+- Align horizontal center relative to key object
 - Align vertical center relative to key object
-- Align horzonial and vertical center relative to key object
-- Align layers automactically with bottom or top layer of a group layers
+- Align horizontal and vertical center relative to key object
+- Align layers automatically with bottom or top layer of a group layers
 
 ## Installation
 
@@ -59,9 +59,9 @@ To change the setting, select `Plugins ▸ AlignTo ▸ Setting` in the Sketch me
 - Align right relative to key object: `CMD` + `Option` + `Ctrl` + `r`
 - Align top relative to key object: `CMD` + `Option` + `Ctrl` + `t`
 - Align bottom relative to key object: `CMD` + `Option` + `Ctrl` + `b`
-- Align horzonial center relative to key object: `CMD` + `Option` + `Ctrl` + `h`
+- Align horizontal center relative to key object: `CMD` + `Option` + `Ctrl` + `h`
 - Align vertical center relative to key object: `CMD` + `Option` + `Ctrl` + `v`
-- Align vertical and horzonial center relative to key object: `CMD` + `Option` + `Ctrl` + `a`
+- Align vertical and horizontal center relative to key object: `CMD` + `Option` + `Ctrl` + `a`
 
 ### Change Shortcut
 Open `AlignTo` directory, then open `manifest.json` file with text editor. Change shortcut you want in the command lists.
